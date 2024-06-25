@@ -133,10 +133,10 @@ INSTALLED_APPS += ["anymail"]
 # https://anymail.readthedocs.io/en/stable/installation/#anymail-settings-reference
 # https://anymail.readthedocs.io/en/stable/esps/sendgrid/
 EMAIL_BACKEND = "anymail.backends.sendgrid.EmailBackend"
-ANYMAIL = {
-    "SENDGRID_API_KEY": env("SENDGRID_API_KEY"),
-    "SENDGRID_API_URL": env("SENDGRID_API_URL", default="https://api.sendgrid.com/v3/"),
-}
+# ANYMAIL = {
+#     "SENDGRID_API_KEY": env("SENDGRID_API_KEY"),
+#     "SENDGRID_API_URL": env("SENDGRID_API_URL", default="https://api.sendgrid.com/v3/"),
+# }
 
 
 # LOGGING
