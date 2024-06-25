@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=acctmarket
+POSTGRES_USER=VecvOvzUrZaOXPqyKBYoEMGZzDjdUwLc
+POSTGRES_PASSWORD=vkn6GMRZeuv8Ebp9mJugdvbDduYpQWkR2P4wxrdRIyTe7SxEpZT8MietnqQ8wbr9
