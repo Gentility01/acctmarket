@@ -80,7 +80,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "acctmarket.users",
+    "acctmarket.applications.users",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -184,7 +184,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "acctmarket.users.context_processors.allauth_settings",
+                "acctmarket.applications.users.context_processors.allauth_settings",
             ],
         },
     },
@@ -271,13 +271,13 @@ ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 # https://docs.allauth.org/en/latest/account/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://docs.allauth.org/en/latest/account/configuration.html
-ACCOUNT_ADAPTER = "acctmarket.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "acctmarket.applications.users.adapters.AccountAdapter"
 # https://docs.allauth.org/en/latest/account/forms.html
-ACCOUNT_FORMS = {"signup": "acctmarket.users.forms.UserSignupForm"}
+ACCOUNT_FORMS = {"signup": "acctmarket.applications.users.forms.UserSignupForm"}
 # https://docs.allauth.org/en/latest/socialaccount/configuration.html
-SOCIALACCOUNT_ADAPTER = "acctmarket.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "acctmarket.applications.users.adapters.SocialAccountAdapter"
 # https://docs.allauth.org/en/latest/socialaccount/configuration.html
-SOCIALACCOUNT_FORMS = {"signup": "acctmarket.users.forms.UserSocialSignupForm"}
+SOCIALACCOUNT_FORMS = {"signup": "acctmarket.applications.users.forms.UserSocialSignupForm"}
 
 
 # Your stuff...

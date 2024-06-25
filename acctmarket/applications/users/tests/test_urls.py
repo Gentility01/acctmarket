@@ -1,7 +1,7 @@
 from django.urls import resolve
 from django.urls import reverse
 
-from acctmarket.users.models import User
+from acctmarket.applications.users.models import User
 
 
 def test_detail(user: User):

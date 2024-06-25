@@ -4,7 +4,7 @@ import django.utils.timezone
 from django.db import migrations
 from django.db import models
 
-import acctmarket.users.models
+import acctmarket.applications.users.models
 
 
 class Migration(migrations.Migration):
@@ -106,7 +106,7 @@ class Migration(migrations.Migration):
                 "abstract": False,
             },
             managers=[
-                ("objects", acctmarket.users.models.UserManager()),
+                ("objects", acctmarket.applications.users.models.UserManager()),
             ],
         ),
     ]
