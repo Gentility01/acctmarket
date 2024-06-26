@@ -1,8 +1,8 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseForbidden
 
-from acctmarket.applications.users.models import (ContentManager,
-                                            CustomerSupportRepresentative)
+from acctmarket.applications.users.models import (
+    ContentManager, CustomerSupportRepresentative)
 
 
 class ContentManagerRequiredMixin(LoginRequiredMixin):

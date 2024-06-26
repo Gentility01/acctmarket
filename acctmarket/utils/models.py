@@ -3,8 +3,9 @@ import cloudinary.uploader
 from cloudinary.models import CloudinaryField
 from django.db import models
 from django.db.models.query import QuerySet
-from model_utils import FieldTracker
 from django.utils import timezone
+from model_utils import FieldTracker
+
 from acctmarket.utils.media import MediaHelper
 
 

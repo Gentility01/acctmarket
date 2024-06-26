@@ -3,9 +3,9 @@ from decimal import Decimal
 
 import auto_prefetch
 from ckeditor_uploader.fields import RichTextUploadingField
+from django.acctmarket.validators import MinValueValidator
 from django.conf import settings
 from django.contrib.auth.models import Permission
-from django.acctmarket.validators import MinValueValidator
 from django.db.models import (CASCADE, SET_NULL, BooleanField, CharField,
                               DateTimeField, DecimalField, FileField,
                               IntegerField, JSONField, SlugField, TextField)
@@ -17,7 +17,8 @@ from taggit.managers import TaggableManager
 from acctmarket.utils.choices import ProductStatus, Rating, Status
 from acctmarket.utils.media import MediaHelper
 from acctmarket.utils.models import (ImageTitleTimeBaseModels, TimeBasedModel,
-                               TitleandUIDTimeBasedModel, TitleTimeBasedModel)
+                                     TitleandUIDTimeBasedModel,
+                                     TitleTimeBasedModel)
 from acctmarket.utils.payments import PayStack
 
 # Create your models here.
