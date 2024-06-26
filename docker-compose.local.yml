@@ -1,7 +1,7 @@
 volumes:
   acctmarket_local_postgres_data: {}
   acctmarket_local_postgres_data_backups: {}
-  
+
 
 services:
   django:
